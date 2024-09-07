@@ -2,6 +2,14 @@ package sv;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Catalogue catalogue = new Catalogue();
+        catalogue.displayCars();
+        catalogue.displayBikes();
+
+        Order order = new Order();
+        order.getBasket();
+
+
     }
 }
