@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b05f243-6f5d-40f0-a3ce-8de943e52b52" name="Changes" comment="specs put together">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/Catalogue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/Motorbike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sv/Vehicle.java" afterDir="false" />
+    <list default="true" id="1b05f243-6f5d-40f0-a3ce-8de943e52b52" name="Changes" comment="getting there">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Catalogue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <workItem from="1725127767430" duration="6383000" />
       <workItem from="1725377070898" duration="1944000" />
       <workItem from="1725475614335" duration="18460000" />
-      <workItem from="1725713686434" duration="15743000" />
+      <workItem from="1725713686434" duration="26148000" />
     </task>
     <task id="LOCAL-00001" summary="specs put together">
       <option name="closed" value="true" />
@@ -101,7 +98,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724869319121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="specs put together">
+      <option name="closed" value="true" />
+      <created>1725734810166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725734810166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="getting there">
+      <option name="closed" value="true" />
+      <created>1725734858077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725734858077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="specs put together" />
-    <option name="LAST_COMMIT_MESSAGE" value="specs put together" />
+    <MESSAGE value="getting there" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting there" />
   </component>
 </project>

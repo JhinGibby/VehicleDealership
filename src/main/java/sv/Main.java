@@ -1,15 +1,13 @@
 package sv;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        Catalogue catalogue = new Catalogue();
-        catalogue.displayCars();
-        catalogue.displayBikes();
+        Scanner sc = new Scanner(System.in);
 
         Order order = new Order();
-        order.getBasket();
-
+        order.initOrder();
 
     }
 }

@@ -8,7 +8,7 @@ public class Catalogue {
     HashMap<String, Car> CarCatalogue = new HashMap<>();
     HashMap<String, Motorbike> MotorbikeCatalogue = new HashMap<>();
 
-    public Catalogue(){
+    public Catalogue() {
         // Adding cars to the catalogue using brand name as the key
         CarCatalogue.put("Nissan", new Car("370Z", 80000));
         CarCatalogue.put("Ferrari", new Car("LaFerrari", 450000));
@@ -24,21 +24,23 @@ public class Catalogue {
         MotorbikeCatalogue.put("Harley Davidson", new Motorbike("Harley Davidson", 88000));
     }
 
-public void displayCars(){
+    public void displayCars() {
         System.out.println("Car Catalogue:");
-        for (String brand :CarCatalogue.keySet()){
+        int index = 1;
+        for (String brand : CarCatalogue.keySet()) {
             Car car = CarCatalogue.get(brand);
-            System.out.println(car);
+            System.out.println(index + ". " + brand + " " + car.getName() + ", Price: £" + car.getPrice());
+            index++;
         }
-}
+    }
 
-public void displayBikes(){
+    public void displayBikes() {
         System.out.println("Motorbike Catalogue:");
-        for (String brand :MotorbikeCatalogue.keySet()){
+        int index = 1;
+        for (String brand : MotorbikeCatalogue.keySet()) {
             Motorbike motorbike = MotorbikeCatalogue.get(brand);
-            System.out.println(motorbike);
+            System.out.println(index + ". " + brand + " " + motorbike.getName() + ", Price: £" + motorbike.getPrice());
+        index++;
         }
-}
-
-
+    }
 }
