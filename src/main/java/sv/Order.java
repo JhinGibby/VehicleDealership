@@ -45,6 +45,7 @@ public class Order {
     public double getTotalCost() {
         double total = 0;
         for (Vehicle v : basket) {
+        //    System.out.println("Adding price: " + v.getPrice()); // for debugging
             total += v.getPrice();
         }
         return total;
@@ -78,14 +79,23 @@ public class Order {
                     break;
                 case 2:
                     catalogue.displayBikes();
-                    System.out.println("Please select a motorbike");
+                    System.out.println("Please select a car");
+                    int bikeChoice = sc.nextInt();
+                    ArrayList<String> bikeBrands = new ArrayList<>(catalogue.MotorbikeCatalogue.keySet());
+                    if (bikeChoice > 0 && bikeChoice <= bikeBrands.size()) {
+                        String selectedBikeBrand = bikeBrands.get(bikeChoice -1);  // Get brand by index
+                        addToBasket(catalogue.MotorbikeCatalogue.get(selectedBikeBrand));  // Add bike to basket
+                    } else {
+                        System.out.println("Invalid selection.");
+                    }
                     break;
                 case 3:
                     getBasket();
                     break;
                 case 4:
                     getBasket();
-                    getTotalCost();
+                    double totalCost = getTotalCost();
+                    System.out.println("Total cost: £" + totalCost);
                     System.out.println("Thank you for shopping!");
 
                     break;
