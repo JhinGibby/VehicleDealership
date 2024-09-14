@@ -1,46 +1,57 @@
 package sv;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.UUID;
 
 public class Catalogue {
-    HashMap<Vehicle, Integer> VehicleCatalogue = new HashMap<>();
-    HashMap<String, Car> CarCatalogue = new HashMap<>();
-    HashMap<String, Motorbike> MotorbikeCatalogue = new HashMap<>();
+    HashMap<UUID, Vehicle> VehicleCatalogue = new HashMap<>();
 
     public Catalogue() {
-        // Adding cars to the catalogue using brand name as the key
-        CarCatalogue.put("Nissan", new Car("370Z", 80000));
-        CarCatalogue.put("Ferrari", new Car("LaFerrari", 450000));
-        CarCatalogue.put("Lada", new Car("Niva", 40000));
-        CarCatalogue.put("Aurus", new Car("Senat", 2500000));
-        CarCatalogue.put("Lamborghini", new Car("Insect", 380000));
+        // Add vehicles to the catalogue
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("BMW M5", 52000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("Nissan 370Z", 28000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("Ferrari LaFerrari", 450000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("Lada Niva", 10000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("Aurus Senat", 2500000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Car("Lamborghini Insect", 380000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Motorbike("Kawasaki Ninja", 60000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Motorbike("BMW R 1250 RS", 50000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Motorbike("Ducati SuperSport 950", 49000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Motorbike("Royal Enfield Bullet 350", 25000));
+        VehicleCatalogue.put(UUID.randomUUID(), new Motorbike("Harley Davidson", 88000));
 
-        // Adding motorbikes to the catalogue
-        MotorbikeCatalogue.put("Kawasaki", new Motorbike("Ninja", 60000));
-        MotorbikeCatalogue.put("BMW", new Motorbike("R 1250 RS", 50000));
-        MotorbikeCatalogue.put("Ducati", new Motorbike("SuperSport 950", 49000));
-        MotorbikeCatalogue.put("Royal Enfield", new Motorbike("Bullet 350", 25000));
-        MotorbikeCatalogue.put("Harley Davidson", new Motorbike("Harley Davidson", 88000));
     }
 
-    public void displayCars() {
-        System.out.println("Car Catalogue:");
-        int index = 1;
-        for (String brand : CarCatalogue.keySet()) {
-            Car car = CarCatalogue.get(brand);
-            System.out.println(index + ". " + brand + " " + car.getName() + ", Price: £" + car.getPrice());
-            index++;
+    // Display vehicles and return a list of UUIDs for the user to select
+    public ArrayList<UUID> displayVehicles(int x) {
+        ArrayList<UUID> displayedVehicleIds = new ArrayList<>();  // Store the UUIDs of the displayed vehicles
+
+        if (x == 1) {  // Display cars
+            System.out.println("Car Catalogue:");
+            for (UUID id : VehicleCatalogue.keySet()) {
+                Vehicle vehicle = VehicleCatalogue.get(id);
+                if (vehicle instanceof Car) {  // Only display cars
+                    System.out.println(displayedVehicleIds.size() + 1 + ". " + vehicle.getName() + " - Price: £" + vehicle.getPrice());
+                    displayedVehicleIds.add(id);  // Add UUID to the list
+                }
+            }
+        } else if (x == 2) {  // Display motorbikes
+            System.out.println("Motorbike Catalogue:");
+            for (UUID id : VehicleCatalogue.keySet()) {
+                Vehicle vehicle = VehicleCatalogue.get(id);
+                if (vehicle instanceof Motorbike) {  // Only display motorbikes
+                    System.out.println(displayedVehicleIds.size() + 1 + ". " + vehicle.getName() + " - Price: £" + vehicle.getPrice());
+                    displayedVehicleIds.add(id);  // Add UUID to the list
+                }
+            }
         }
+
+        return displayedVehicleIds;  // Return the UUIDs for selection
     }
 
-    public void displayBikes() {
-        System.out.println("Motorbike Catalogue:");
-        int index = 1;
-        for (String brand : MotorbikeCatalogue.keySet()) {
-            Motorbike motorbike = MotorbikeCatalogue.get(brand);
-            System.out.println(index + ". " + brand + " " + motorbike.getName() + ", Price: £" + motorbike.getPrice());
-        index++;
-        }
+    // Get a specific vehicle by its UUID
+    public Vehicle getVehicle(UUID id) {
+        return VehicleCatalogue.get(id);
     }
 }

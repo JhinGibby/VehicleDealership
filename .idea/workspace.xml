@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b05f243-6f5d-40f0-a3ce-8de943e52b52" name="Changes" comment="completion">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Catalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Motorbike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Vehicle.java" afterDir="false" />
+    </list>
+    <list id="9b996460-d301-4d89-9cf8-8c151ca978d0" name="Changes by va92b" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/sv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sv/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sv/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +44,16 @@
     &quot;accountId&quot;: &quot;f0270ad1-8489-48be-8aa4-cb2c9f82ad0c&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/sv/Vehicle.java">
+      <ranges>
+        <range start1="3" end1="12" start2="3" end2="14" changelist="1b05f243-6f5d-40f0-a3ce-8de943e52b52" />
+        <range start1="13" end1="21" start2="15" end2="22" changelist="1b05f243-6f5d-40f0-a3ce-8de943e52b52" />
+        <range start1="24" end1="26" start2="25" end2="28" changelist="9b996460-d301-4d89-9cf8-8c151ca978d0" />
+        <range start1="28" end1="28" start2="30" end2="31" changelist="1b05f243-6f5d-40f0-a3ce-8de943e52b52" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -49,6 +69,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/st89e/IdeaProjects/VehicleDealership",
@@ -57,9 +78,18 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sv" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +115,14 @@
       <workItem from="1725127767430" duration="6383000" />
       <workItem from="1725377070898" duration="1944000" />
       <workItem from="1725475614335" duration="18460000" />
-      <workItem from="1725713686434" duration="28954000" />
+      <workItem from="1725713686434" duration="31755000" />
+      <workItem from="1725801004524" duration="883000" />
+      <workItem from="1725802479005" duration="4009000" />
+      <workItem from="1725801712742" duration="337000" />
+      <workItem from="1725903634836" duration="10365000" />
+      <workItem from="1725914889035" duration="2205000" />
+      <workItem from="1726075345403" duration="12096000" />
+      <workItem from="1726341571284" duration="2174000" />
     </task>
     <task id="LOCAL-00001" summary="specs put together">
       <option name="closed" value="true" />
@@ -127,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725757399123</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="completion">
+      <option name="closed" value="true" />
+      <created>1725757530014</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725757530014</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
